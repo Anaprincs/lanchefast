@@ -44,7 +44,7 @@ class ProdutoEdit extends Component
         session()->flash('message', 'Produto atualizado com sucesso!');
         
         // Redireciona para a página de visualização do produto
-        return redirect()->route('produtos.show', ['produto' => $this->produto->id]);
+        return redirect()->route('produtos.index');
     }
 
     // Renderiza a view
